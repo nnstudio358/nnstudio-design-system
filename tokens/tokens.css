@@ -1,0 +1,72 @@
+/**
+ * nnstudio Design Tokens
+ * Source of truth for all color, typography, and spacing values.
+ * Consumed via Tailwind CSS v4 @theme inline directive in globals.css.
+ */
+
+:root {
+  /* ─── Colors ─── */
+  --color-bg:       #EDECE8;   /* Page background, light section bg */
+  --color-ink:      #232520;   /* Headlines, body text, dark section bg */
+  --color-muted:    #8A8A82;   /* Nav links, labels, secondary text */
+  --color-faint:    #D6D2CA;   /* Card borders, dividers */
+  --color-rule:     #C8C2BA;   /* Horizontal rules, separators */
+  --color-amber:    #C8923A;   /* Primary CTA, eyebrows, bullet markers */
+  --color-slate:    #2C3236;   /* Industry tags, secondary accent */
+  --color-offwhite: #F4F3EF;   /* Text on ink/dark sections */
+
+  /* ─── Inline color values (not in Tailwind aliases) ─── */
+  --color-body-light: #6B6A63; /* Body copy on light bg — between ink and muted */
+  --color-body-dark:  #C8C2BA; /* Body copy on dark/ink bg */
+  --color-amber-hover: #D4A55A; /* Amber CTA hover state */
+  --color-ink-border:  #252523; /* Border on ink sections (slightly lighter than ink) */
+
+  /* ─── Typography ─── */
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans:  'DM Sans', system-ui, -apple-system, sans-serif;
+
+  /* ─── Type scale (desktop / responsive via component classes) ─── */
+  --text-hero:        76px;  /* Hero h1 — md: 56px, sm: 40px */
+  --text-section:     52px;  /* Section h2 — md: 40px, sm: 30px */
+  --text-pillar:      40px;  /* Pillar h3 — md: 36px, sm: 32px */
+  --text-card:        18px;  /* Portfolio card headline */
+  --text-body-lg:     19px;  /* Body large — sm: 17px / 16px */
+  --text-body-sm:     15px;  /* Body small */
+  --text-nav:         13px;  /* Nav links */
+  --text-cta:         14px;  /* Button labels */
+  --text-eyebrow:     12px;  /* Uppercase labels and eyebrows */
+  --text-tag:         11px;  /* Tags */
+
+  /* ─── Type settings ─── */
+  --tracking-tight:   -0.02em;  /* Headings */
+  --tracking-nav:      0.04em;  /* Nav, CTA */
+  --tracking-eyebrow:  0.12em;  /* Eyebrows (some use 0.14em or 0.18em) */
+  --lh-headline:       1.08;    /* Hero */
+  --lh-section:        1.1;     /* Section headlines, pillars */
+  --lh-body:           1.65;    /* Body copy */
+
+  /* ─── Spacing scale (px) ─── */
+  --space-1:   4px;
+  --space-2:   8px;
+  --space-4:  16px;
+  --space-5:  20px;
+  --space-6:  24px;
+  --space-8:  32px;
+  --space-9:  36px;
+  --space-10: 40px;
+  --space-14: 56px;
+  --space-16: 64px;
+  --space-24: 96px;
+  --space-30: 120px;
+
+  /* ─── Layout ─── */
+  --max-width:        1440px;
+  --nav-height-sm:    64px;
+  --nav-height-lg:    80px;
+  --section-pad-sm:   64px;   /* py-16 */
+  --section-pad-md:   96px;   /* py-24 */
+  --section-pad-lg:  128px;   /* py-32 */
+  --side-pad-sm:      20px;   /* px-5 */
+  --side-pad-md:      40px;   /* px-10 */
+  --side-pad-lg:      64px;   /* px-16 */
+}
